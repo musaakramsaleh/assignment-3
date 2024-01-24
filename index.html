@@ -19,6 +19,7 @@
         color: #131318;
     }
 </style>
+<!-- justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 -->
 </head>
 <body>
     <header class="max-w-[1170px] mx-[20px] lg:mx-auto">
@@ -54,9 +55,9 @@
           </div>
           <section class="banner">
             <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
+                <div id="slide1" class="carousel-item relative w-full md:h-auto">
                   <img src="Images/1.png" class="w-full" />
-                  <div class="absolute flex lg:justify-start top-[86%] -translate-y-[50%] lg:translate-y-0 lg:top-[86%] left-[40%] lg:left-[3%]">
+                  <div class="absolute flex justify-between lg:justify-start top-1/2 -translate-y-[1/2] lg:translate-y-0 lg:top-[86%] left-5 right-5 lg:right-0 lg:left-[3%]">
                     <a href="#slide4" class="btn btn-circle bg-black text-white font-normal">❮</a> 
                     <a href="#slide2" class="btn btn-circle bg-black text-white font-normal">❯</a>
                   </div>
@@ -67,7 +68,7 @@
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
                     <img src="Images/1.png" class="w-full" />
-                    <div class="absolute flex lg:justify-start top-[76%] lg:top-[86%] left-[41%] lg:left-[3%]">
+                    <div class="absolute flex justify-between lg:justify-start top-1/2 -translate-y-[1/2] lg:translate-y-0 lg:top-[86%] left-5 right-5 lg:right-0 lg:left-[3%]">
                       <a href="#slide1" class="btn btn-circle bg-black text-white font-normal">❮</a> 
                       <a href="#slide3" class="btn btn-circle bg-black text-white font-normal">❯</a>
                     </div>
@@ -78,7 +79,7 @@
                   </div> 
                   <div id="slide3" class="carousel-item relative w-full">
                     <img src="Images/1.png" class="w-full" />
-                    <div class="absolute flex lg:justify-start top-[76%] lg:top-[86%] left-[41%] lg:left-[3%]">
+                    <div class="absolute flex justify-between lg:justify-start top-1/2 -translate-y-[1/2] lg:translate-y-0 lg:top-[86%] left-5 right-5 lg:right-0 lg:left-[3%]">
                       <a href="#slide2" class="btn btn-circle bg-black text-white font-normal">❮</a> 
                       <a href="#slide4" class="btn btn-circle bg-black text-white font-normal">❯</a>
                     </div>
@@ -89,7 +90,7 @@
                   </div> 
                   <div id="slide4" class="carousel-item relative w-full">
                     <img src="Images/1.png" class="w-full" />
-                    <div class="absolute flex lg:justify-start top-[76%] lg:top-[86%] left-[41%] lg:left-[3%]">
+                    <div class="absolute flex justify-between lg:justify-start top-1/2 -translate-y-[1/2] lg:translate-y-0 lg:top-[86%] left-5 right-5 lg:right-0 lg:left-[3%]">
                       <a href="#slide3" class="btn btn-circle bg-black text-white font-normal">❮</a> 
                       <a href="#slide1" class="btn btn-circle bg-black text-white font-normal">❯</a>
                     </div>
@@ -405,7 +406,33 @@
                             <h2 class="md:w-[309px] text-[16px] text-[#131318] font-extrabold">152/1 Mohakhali Wireless Gate</h2>
                         </div>
                 </div> 
-                   
+                   <form action="" class="mx-auto lg:mx-0">
+                    <div class="lg:grid lg:grid-cols-2 gap-6">
+                      <div class="block">
+                        <span class="text-[#131318] text-xl font-bold">Your Name</span><br>
+                        <input type="text" class="mt-4 bg-[#13131808] w-[324px] h-[64px] rounded-xl mb-4 lg:mb-0 pl-5" placeholder="Enter your name">
+                      </div>
+                      <div class="block">
+                        <span class="text-[#131318] text-xl font-bold">Your Email</span><br>
+                        <input type="text" class="mt-4 bg-[#13131808] w-[324px] h-[64px] rounded-xl mb-4 lg:mb-0 pl-5" placeholder="Enter your email">
+                      </div>
+                      <div class="block">
+                        <span class="text-[#131318] text-xl font-bold">Subject</span><br>
+                        <input type="text" class="mt-4 bg-[#13131808] w-[324px] h-[64px] rounded-xl mb-4 lg:mb-0 pl-5" placeholder="Enter your subject">
+                      </div>
+                      <div class="block">
+                        <span class="text-[#131318] text-xl font-bold">Phone Number</span><br>
+                        <input type="text" class="mt-4 bg-[#13131808] w-[324px] h-[64px] rounded-xl mb-4 lg:mb-0 pl-5" placeholder="Enter your phone number">
+                      </div>
+                      <div class="block col-span-2">
+                        <span class="text-[#131318] text-xl font-bold">Message</span><br>
+                        <textarea placeholder="Write your message" class="mt-4 resize-none  bg-[#13131808] w-[324px] lg:w-[672px] h-[370px] rounded-xl mb-4 lg:mb-0 pl-5 pt-5" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="block col-span-2">
+                        <button class="btn w-full">Send Message</button>
+                      </div>
+                    </div>
+                   </form>
             </div> 
             <div class="mt-12 bg-[#13131808] py-[35px] rounded-xl">
                 <h2 class="text-center text-[#131318] font-extrabold text-2xl">Social Media</h2>
